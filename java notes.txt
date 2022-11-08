@@ -1,0 +1,453 @@
+		Opps-- page 193
+
+ data hiding
+ abstraction
+ encapsulation
+ tightly encapsulation class
+ is relation ship  
+ 
+ has a relation ship
+ method signature
+ overloading
+ overriding
+ method hiding
+ static control flow
+ instance control flow
+ construcotr
+ coupling
+ cobesion
+ type casting
+ 
+ 
+ 
+ class {method defination}
+ 
+ void m();  {type of method  method defination , method declaration ,method call}
+ 
+ NOTE : -  void m(); // defination
+           void m1(){} declaration
+           void m2(){} method call
+		   
+		   
+ void m2(){
+ Sop("kiran")
+ }
+ object
+ interface {method declaration}
+ abstract class   {method declaration & method defination}
+ 
+ 
+ 
+ 
+ class Employee{
+ 
+ int sal;
+Address adr;  {Associate aggregation }   
+
+
+ 
+ }
+ 
+ 
+ Agrigation:- If a class hava entity reference it is called as Hash a relation ship in java example 
+ sudent havae name and rollnum along wiht address here is the address hash a relation ship
+ 
+ Encapsulation :- encapsulation is a mechanisum whic is the wrapping or hidden the data from the out side the class we can use the private 
+access modifiers in frient of the varable 
+to declared setter and getters method()
+
+lanbook:- jar  it is the given access the setter and getters in java like how ur useing in encapsulationn like that it will be work as lombook jar
+
+
+
+Abstraction :- Abstraction is a process which is the hidden the data from the user it is showing only required information hidden all 
+confidential data
+we can declear the abstract in declear before the class [it is the abstract class ] you can declear before method it is the [abstract method]
+
+Inheritance :- Inheritance is  the process which is the extended the feauters from the base class to derived class here is useing extend 
+keyword to to get the featuter from one to another
+it is application performane is improved and code is reusebiliy 
+here is not suported for multiple inheritance not suported it can be suported in interfae we us the impliment keyword;
+
+NOTE :- multiple inheritance is two type in java 
+ isA relation ship :- it is the extend base class to derived class in java
+ has A - relation :- if a class hava a entity reference  it is called as has a relationship 
+ 
+ polymarphism :-  polymarphism it means poly means many marphisum means forms it is came from great word 
+ polymarphism concept are two types in java method overloading method overriding
+ 
+ method overloading :- if a class hava a morethen one mthod as a same name with different parameter or odere should 
+ 
+ AccessModifiers:-  
+ 
+ public can be access anywhere
+ protected :  it can be accessed with in the package and another package of sub class only
+ defatult : with in the package
+ private : it can be useing with in  the class  only
+ 
+ java super class Methods ():-  Every java class directly or inderctly extends by java object 
+ object calss methods are 
+ 1 clone() -> this method is used to create the copy of duplicate the object in java
+ 2 finalize method()-> this method is calling garbage collector when non resource method is hold on object this type of method would be 
+remove and clean up memory space
+ 3 toStirng()-> this method is used to string reprasentation of object
+ 4 equals ()-> this method is used for checking wethere the same object is existed or not 
+ 5 getClass() -> this method is used for return the class of object
+ 6 hashCode() -> this method is used for return the hasCode of object
+ 
+ Question :-  How to avoid  the duplicates values in hashset in java
+ 
+ hashset invoke the equals method  to compare the object one and object two if both are same it will be save one value only
+ 
+ cuppling :-  Cuppling reference by One Object ot another object cuppling two type in java 
+  
+  1 tightCuppling  :- if one class is depends on another class if ur change the one class you need to change the another class also
+  
+  
+  2 LooseCuppling  :- loose cuppling is indipenditly no need to depends on another class you need impliment n number of class impliment at 
+runtime in java
+  
+  Cohesion :- the togetherness of modules element
+  there are two types of cohesion
+  1 low cohesion :- functionalitys are indipendents
+  2 high cohesion :- functionalitys of modules are strongly related 
+ 
+   Low chohesion:-  low readibulity and less testbility
+   High cosesion:-  this is the high readibulity high reusebiliy & understandbility
+   
+   Inner class :-  Inner class are nathing but nested class it is inside the class there are 3 main advantages of using inner classs
+   inner class are access the all data member and method and private datamember also access the inside the inner classs
+   it is more readbulity and reusebiliy all in one place
+   it is required less place
+   
+   NOTE :- Inner class are nested class all nonstatic nested classes are nested class
+   3 types of inner class:-
+   local inner class
+   anonymus inner class
+   member inner class  
+   
+      member inner class  [A classs inside the class and out side the  method]
+	  anonymus inner class [a class is created and impliment the interface extend it name is decided by the compiler.]
+	  local inner class [a class insede  the method]
+	  static inner class [static class with in the inside the class]
+	  nested inteface[an interface is created with in the class or interface]
+	  
+	  java string class:- 
+	  
+	  
+	  
+	  Threading Methods:-
+	  1 yeild - if u want to forwarding controller one class to another class you can better go for yield it can be checking the current 
+thread and 
+	  before theread check the prioriyt waiting thread if waiting thread great then equal thread it will be going to directly waiting thread
+	  
+	  2 Join : if u want to push the waiting thread into excution theread u can use the join method() 
+	  
+	  3 sleep : this method is used for the stop the thread required time
+	  
+	  
+	  java Tpoint intervieiw Question 227(single tone topic)
+	  
+	  Collection Hiererchy are two types :- 
+	  Collection Hierarcy
+	  Map Hierarcy;
+	  
+	  Collection Hierarcy:-
+	  list 
+	  set 
+	  queue
+	  
+	  Map :-
+	  Hash map 
+	  tree map 
+	  linked Hashmap
+	  
+	  
+	  (Set )
+	  it does not allow the duplicates
+
+	  
+	  
+(SingleTone desing pattern) :- singletone design patters is create the one class and giving to globle point of access 
+it is the main purpose of using to save the memory allocation one reference can access the all the class objects(single instance reuse again 
+and again)
+
+if u want create the singletone design patterns fallowing things
+ 1 static member[static data member can create the object only onece this instance will be given to reference all calass]
+ 2 private constructor[ private can be privent single initiate class to outside] 
+ 3 static factory methods [it will be given globle acceess to class]
+ 
+ Inheritance(Single Inheritance ,Multilevel inheritance ,Hierachical inheritance multiple inheritance (A-B))
+ single inheritance :- one to one
+ multilever inheritance :- one to many (A->B B-C C-D D-E extend)
+ 
+ Hierachical Inheritance:- one baseclasls and many derived class (A-> B B-A C-A D-E extends)
+Multiple inheritance :- one base many derived class(A -B  C-A,B (this is not working because ambiquity problem ))
+
+Agrigation(One class givent reference object entity to another class  example student having name no and Address is another class address 
+class reference is given to student class )
+
+ 
+ Types of forloops in java
+ 1 simpple for loop
+ 2 enhenced for loop
+ 3 labled for loop
+ 
+       MULTITHREADING :-
+	   
+	   POINTS :-
+	   it is the sharable  memory area
+	   
+	   NOTE : Multitsking achived two ways 
+	    1 processbased 
+		2 thread based
+		
+		processbased :- it is the hevywait process it can take time to migration one process ot another process first load and save and 
+update it will be take loat of time to migration
+		Thread based :- this is the ligh wait process it will not take the much time to process and migration
+		
+		Threads methods:-
+		
+		start():- this method is used to excution of thread
+		run() :- it is used to given action for a thread
+		sleep():- this is used to stop the some period of time ur thread
+		currentThread() :- it is returns current thread reference object
+		join() :- it is wait for a thread die
+		getPriority() :- it will be return the prioriyt of thread
+		setPriority() :- it will be change the priority of thread
+		getName():- it will be return the nameOf thread
+		setName ():- it wiil be changet the name of Thread
+		getId():- it will be return the threae id;
+		isAlive():-  it will be test the thread is live or not
+		yield() :- it is used to pass the current thread allow the another thread temporarily
+		suspend() :- this is used tho suspend the thread
+		resume():- it is used to continue conntinue the suspend theread object
+		stop() :- it is used to stop the  thread
+		destory():- it is used to destory the thread group and all of it is sub group
+		isDemon() :- it is test the thread is isDemon or not
+		setDemon() :- it is used to set the demon user thread
+		intrrupt() : - it is used to intrept the thread
+		isintrrupted() :- it is test wether the current theread has been intrrupted or not
+		activeCount() :-  it is return the number of active count thread group
+		checkAccess():-  it is check the current running thread has permission to modifiers or not
+		holdLock() :- it is boolean type it will be check the thread is holdLock or not
+		dumpStack() :- it will be print the stacktrace of error message
+		getStackTrace():- it will be return the array of  current stacktrace error
+		notify() :- it is used to give informationn  waiting for a particalr thread object
+		notifyAll() -: it will be given information to all waiting thread of particalr object
+		
+		Types of LifeCycles:-
+		 newState
+		 Runnable
+		 Running
+		 wait
+		 HaltState
+	Question :-	 Can we start a thread twice ?
+	No if ur start the thread once it will never start the secoud time if ur trying to star the thread it will be given the exception  
+IlligigalStateException 
+	
+	Question :- can we call the static method another static method?
+	 yes a static method can call only another static method only
+	 
+	 Question :- can allow non static method to static method();
+	  yes
+	  
+	Question :-  can call non static method to call the nonstatic method?
+	
+	  
+	  Static synchronized :-  if u make the synchronized to static the lock will be class level only but not object level
+	  
+		
+DeatLock:- it is a situation when 2 process trying reach the same resource it is efectively or prevent each outher access the same resource
+
+JAVA STREAMS:-  streams java input stream is used given input and produced out put data  there are 3 typs of streams in java
+
+1 system.out :- standerd out put stream
+2 system.in :- standerd input stream
+3 system.error :-standerd error stream
+
+
+Java stirngOutputBuffer :- it is buffer class it can be used to storing data it is internally use buffer store data  to write the data into directly buffer it will be performane is so fast
+
+DataOutputstream :- it is class it can allow the primitive data to read the data into outputstream  indipendint a ways
+
+Serializable :- it is mechanisum of a process  if ur object want to conver the bytestream u need impliment ur class to serializable it will covent obj into bytestream bytestream int object
+we have two concepts here serialization and deserialization process
+
+rulz: - in serialization u will write the fileOutputstream class and ObjectOutPutStream class write() close() and ur data will be storing in files
+
+INNER CLASS IN JAVA:- inner class is nathing but one aditional inside another class 
+note:- It can be access the aditionaly private member and methods also
+
+  
+                   Syntex: - class OuterClass{
+                            class InnerClass{
+                          }
+                      }
+ Advantages of InnerClass:- 
+  1 we can access the all the data members and methods and private varables and outer class also
+  2 inner class are more readable and maintance it it  logical is the group of the in one place classes and interface 
+  3 we can write the less code
+
+
+Question: - difference between inner class and nested classs?
+
+nested class is part of the nested class 
+there are 3 types of nested  class  
+ 1  member inner class
+ 2  anonymous class
+ 3  logical inner class
+
+
+Enum :- it is the fixed constant data type by default it is the public static final example emum constant weeks sunday to monday no need to change the week 
+enum it is a classs it has fixed
+
+advantages :-
+1 enum can give type safety
+ 2 enum can use the swith very easy
+3  enum cab be traversed
+4 it can be implimented n number of interface but can't the exetends the calss why because enu internally jvm extends enum class
+
+
+map.entrySet().stream().sort(Map.Entry.compareByValue()).forEatch(System.out::printlns);
+
+
+Question: - which is the strong relationshsip in java aggrigation or composition?
+
+agrigation is week relationship and composition is strong relationship in java
+
+
+
+
+1 spring boot anotations
+2 what is the qualifier anotations
+3 rest 
+4 spring modules
+5 rest method()
+6 java map
+7 comparator and comarable sorting
+8 list
+9 overridden & override
+10 static bind dynamic bind
+11 gradle and maven  difference
+ 12 what is the git
+
+
+Question :- difference between comparable and comparator in java
+
+Comparable:-  it is the single sorting technique
+              comparable given effect to actival class
+              midified
+              it can provided comparaTo()
+              comparable provided java.lang.package
+               we can sort the list of element in 
+              collection.sort method()
+
+comparator :- it is the multi sorting technique
+              comparator doesnot effect to original class
+              modifiere
+              it is the provided compare method to stor the element
+              it is the provided the java.util.package
+             we can sort the element comparator
+             Collection.sort(list,comparator);
+
+              
+
+Question:- thread pool in java
+
+
+Singletone :-  
+1 Runtime 
+2 Bussiness
+3 ServiceLocatar
+
+Singletone class :- for any java class if ur allow the create 
+only one object such type of called singletone class
+exe: -
+Runtime
+BussinessLocator
+ServiceLocatar
+etc
+
+Advantages of singletone class:-
+ if several have same requirement  then it is  not recomanded 
+to create the separate object for every requirement 
+we have to create only one object we can reuse same object 
+for similar requirement so that perfomance and memory utilize will be
+imporved this is the central idea of single class 
+
+How to create the our own singletone classes?
+
+Aproch 1:- we can create our own singletone class for this we
+have to use private constructor,and private static varable,
+and public factory method();
+
+Note :- runtime class internally impimented by use this approch
+
+
+
+
+
+Note :- Types of memorys in java
+there are five types of memorys in java
+
+1 class method area -> it can store the all the class  class are runtime pool 
+2 heap -> here is storing all the java objects
+3 pc -> it is  the program register it can contain the address of virtual michine
+4 stact -> here is store java method varable 
+5 native method-> here is contain all the native method area
+
+
+   EXCEPTION HANDILING TYPES OF EXCEPTION :-
+   
+ 1 InterruptedException?
+
+ when ur working and thread class like the splee method or joins this method always recamended to InterruptedException
+you cant declered to method level u can declered only try cand catch block in this exception handile it in java
+
+wait() this method is used to pass the current theread and wait for another theread and it doesnot call the notify and nofityall methods
+
+
+Amstrong Number :- amstrong number is wehter the given number is amstrong or not initialy value are setup already some value to compare that value if it is the value  same or not if it is the same the value are amstorng number
+
+
+intitial value = 153;
+
+logic: -  1*1*1 = 1
+          5*5*5 =125
+          3*3*3 =27
+ 
+count total Num = 153  this is the amstrong number
+
+
+
+
+
+
+
+<>
+
+Git commands:-
+
+1  change the command
+2  ls - list of folders 
+3 git config --global user.name "kiran"	
+4 git config -- golobal user.email "purinibosco@gmail.com"
+5 git add . // adding all files in the folder
+6  git commit -m "First File" sample.text.txt
+7 git push -u origin master //  master branch
+
+
+// add the file 
+ 1 git add .
+2  git commit -m "Comment write"
+3 git push -u orgin master
+4 git checkout existedBranch git merge newBranchName
+
+
+
+SQL:
+SELECT MAX(id) FROM orders WHERE id NOT IN ( SELECT Max id FROM orders);
+
+
+@RequestMapping(value = "/employee", method = RequestMethod.GET, produce"application/json", "application/xml" })
